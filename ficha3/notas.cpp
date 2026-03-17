@@ -2,10 +2,15 @@
 using namespace std;
 
 int main() {
-    int notas[6] = {12, 15, 10, 18, 14, 16};
+    float notas[6];
 
     for (int i = 0; i < 6; i++) {
-        cout <<"Notas: " << notas[i] << endl;
+        cout << "Introduza a " << i + 1 << "ª nota: ";
+        cin >> notas[i];
+    }
+
+    for (int i = 0; i < 6; i++) {
+        cout << "Notas: " << notas[i] << endl;
     }
 
     for (int i = 0; i < 6; i++) {
