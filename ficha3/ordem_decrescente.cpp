@@ -6,14 +6,18 @@ int main() {
 
     cout << "Escolha um número inteiro: ";
     cin >> numero;
-    cout << "Ordem decrescente" << endl;
+    cout << "Ordem crescente" << endl;
 
-    while (numero>0){
+    for (int i=0; i<=numero; i++){
+        cout << i << endl;
+    }
+
+    cout << "Ordem crescente" << endl;
+
+    while (numero>=0){
         cout << numero << endl;
         numero = numero - 1;
     }
-
-
 
     return 0;
 }
