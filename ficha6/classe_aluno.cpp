@@ -22,9 +22,11 @@ int main() {
     cout  << "Introduza a nota esperada: ";
     cin >> a1.nota_esperada;
 
+    system("cls");
+
+    cout << "Prognosticos de BP." << endl;
+    cout << "Nome do aluno: " << a1.nome_do_aluno << "\t" << "Numero do aluno: " << a1.numero_do_aluno << endl;
+    cout << "Nota esperada na disciplina de BP: " << a1.nota_esperada << endl;
+
     return 0;
 } 
- 
- 
- 
- 
