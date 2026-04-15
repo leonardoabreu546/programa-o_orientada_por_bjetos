@@ -2,15 +2,21 @@
 using namespace std;
 
 class aluno {
+private:
+    float nota_1_teste;
+    float nota_2_teste;
+
 public:
     char nome_do_aluno[40] ; 
     int numero_do_aluno;
-    float nota_1_teste;
-    float nota_2_teste;
+    void set_nota1(float n) {nota_1_teste = n;}
+    void set_nota2(float n) {nota_2_teste = n;}
+
     float nota_final() {return (nota_1_teste+nota_2_teste)/2;}
 };
 
 int main() {   
+    float temp;
 
     aluno a1;
     
@@ -21,10 +27,12 @@ int main() {
     cin >> a1.numero_do_aluno;
 
     cout << "Introduza o nota do primeiro teste: ";
-    cin >> a1.nota_1_teste;
+    cin >> temp;
+    a1.set_nota1(temp);
 
     cout << "Introduza o nota do segundo teste: ";
-    cin >> a1.nota_2_teste;
+    cin >> temp;
+    a1.set_nota2(temp);
 
     system("cls"); 
 
