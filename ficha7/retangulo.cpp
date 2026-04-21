@@ -1,7 +1,4 @@
-#include <iostream>
-using namespace std;
-
-class aluno {
+class rectang {
 private:
     float comp;
     float larg;
