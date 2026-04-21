@@ -18,8 +18,15 @@ public:
     }
 };
 
+class cubo : public rectang {
+private:
+    float altura;
 
-
+public:
+    cubo() {
+        altura = 3;
+    }
+};
 
 
 int main() {   
