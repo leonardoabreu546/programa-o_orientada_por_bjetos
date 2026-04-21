@@ -3,8 +3,8 @@ using namespace std;
 
 class aluno {
 private:
-    float comp=4;
-    float larg=5;
+    float comp;
+    float larg;
 };
 
 int main() {   
