@@ -1,3 +1,6 @@
+#include <iostream>
+using namespace std;
+
 class rectang {
 private:
     float comp;
@@ -26,10 +29,16 @@ public:
     cubo() {
         altura = 3;
     }
+
+    float calcularVolume() {
+    return getComp() * getLarg() * altura;
+    }
 };
 
 
 int main() {   
-   
+    cubo meuCubo;
+    cout << "Volume do cubo: " << meuCubo.calcularVolume() << endl;
+
     return 0;
 }
